@@ -26,8 +26,13 @@
      line-height: 1.25;
  }
 
+ h3 {
+     font-size: 19px;
+ }
+
  p {
      font-size: 19px;
+     font-weight: 300;
  }
 
  .screenshot {
@@ -35,6 +40,7 @@
      max-width: 100%;
  }
 
+ /*Hero section*/
  .hero {
      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) center top / cover, url(../images/thomas-tucker-unsplash-15x.png);
      background-position: center;
@@ -43,11 +49,12 @@
      position: relative;
      text-align: center;
  }
-.logo,
-.playstore {
-    height: auto;
-    max-width: 100%;
-}
+
+ .logo,
+ .playstore {
+     height: auto;
+     max-width: 100%;
+ }
 
  .hero h2 {
      color: white;
@@ -101,19 +108,50 @@
      letter-spacing: .5;
  }
 
+ /*features*/
+ .feature-2 {
+     background-color: var(--light-blue);
+ }
+
+ .separator {
+     background: var(--red);
+     height: 4px;
+     margin: 30px 0;
+     width: 50px;
+ }
+
+/*testimonials*/
+.testimonials {
+    padding: 60px 0;
+}
+
+.testimonials-intro {
+    
+    text-align: center;
+}
+
+.testimonials .separator {
+        margin: 30px auto;
+}
+
+ /*footer*/
+ footer {
+     background-color: var(--light-red);
+ }
+
  /*tablet*/
  @media (min-width: 768px) {
      .container {
          max-width: 720px;
      }
 
-   .image-2 {
-       margin-top: -135px;
-   }
+     .image-2 {
+         margin-top: -135px;
+     }
 
-   .hero {
-       height: 1450px;
-   }
+     .hero {
+         height: 1450px;
+     }
  }
 
  /*desktop*/
@@ -124,6 +162,7 @@
          grid-template-columns: 1fr 1fr;
          align-items: center;
      }
+
      .hero {
          height: 733px;
      }
