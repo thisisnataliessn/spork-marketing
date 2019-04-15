@@ -26,12 +26,13 @@
      line-height: 1.25;
  }
 
- h3 {
+ h3,
+ p {
      font-size: 19px;
+     line-height: 1.5;
  }
 
  p {
-     font-size: 19px;
      font-weight: 300;
  }
 
@@ -45,7 +46,6 @@
      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) center top / cover, url(../images/thomas-tucker-unsplash-15x.png);
      background-position: center;
      background-repeat: no-repeat;
-     height: 1200px;
      position: relative;
      text-align: center;
  }
@@ -82,12 +82,12 @@
  }
 
  .image-2 {
-     margin-top: -50px;
+     margin-top: 24px;
+     align-self: end;
  }
 
- .info-container {
-     padding-top: 100px;
- }
+
+
 
  .playstore {
      padding-top: 32px;
@@ -109,6 +109,12 @@
  }
 
  /*features*/
+ .feature-1 .screenshot {
+     padding: 60px 0;
+     max-width: 316px;
+     margin: auto;
+ }
+
  .feature-2 {
      background-color: var(--light-blue);
  }
@@ -120,18 +126,23 @@
      width: 50px;
  }
 
-/*testimonials*/
-.testimonials {
-    padding: 60px 0;
-}
+ /*testimonials*/
+ .testimonials {
+     padding: 60px 0;
+ }
 
-.testimonials-intro {
-    
-    text-align: center;
-}
+ .testimonials-intro {
 
-.testimonials .separator {
-        margin: 30px auto;
+     text-align: center;
+ }
+
+ .testimonials .separator {
+     margin: 30px auto;
+ }
+
+.attribution {
+    font-weight: 400;
+    text-align: right;
 }
 
  /*footer*/
@@ -145,13 +156,11 @@
          max-width: 720px;
      }
 
-     .image-2 {
-         margin-top: -135px;
-     }
-
      .hero {
          height: 1450px;
      }
+
+
  }
 
  /*desktop*/
@@ -161,38 +170,46 @@
          display: grid;
          grid-template-columns: 1fr 1fr;
          align-items: center;
+         grid-gap: 30px;
      }
 
      .hero {
-         height: 733px;
+         height: 850px;
+     }
+
+     .image-2 {
+         width: auto;
      }
 
      .screens-container {
          display: grid;
          grid-template-columns: repeat(8, 1fr);
          grid-template-rows: repeat(8, 1fr);
+
      }
 
      .image-1 {
-         grid-column: 1/7;
-         grid-row: 1/7;
+         grid-column: 2/6;
+         grid-row: 2/7;
          display: block;
      }
 
      .image-2 {
-         grid-column: 3/9;
-         grid-row: 2/8;
-         margin-top: -50px;
+         grid-column: 5/9;
+         grid-row: 3/8;
+
      }
 
      .info-container {
-         margin-top: -150px;
-         padding-top: 0;
+         align-self: center;
      }
+     .testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin: 30px;
+    }
  }
 
- @media (min-width: 1200px) {
-     .container {
-         max-width: 1140px;
-     }
- }
+
+
