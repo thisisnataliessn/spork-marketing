@@ -19,6 +19,8 @@
  .container {
      max-width: 450px;
      margin: auto;
+     padding: 0 16px;
+     
  }
 
  h2 {
@@ -89,7 +91,7 @@
  .image-2 {
      margin-top: 24px;
      align-self: end;
-     max-width: 312px;
+     max-width: 310px;
      padding-bottom: 40px;
  }
 
@@ -129,7 +131,7 @@
 
  .feature-1 .screenshot {
      padding: 60px 0;
-     max-width: 316px;
+     max-width: 310px;
      margin: auto;
  }
 
@@ -228,8 +230,16 @@
          display: grid;
          grid-template-columns: repeat(8, 1fr);
          grid-template-rows: repeat(8, 1fr);
-
      }
+
+     .feature-2 .screens-container {
+         grid-column: 2;
+         grid-row: 1;
+     }
+.feature-2 .infomrmation {
+    grid-row: 1;
+    grid-column: 1;
+}
 
      .image-1 {
          grid-column: 2/6;
