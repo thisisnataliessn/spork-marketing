@@ -34,6 +34,9 @@
      line-height: 1.5;
  }
 
+ strong {
+     font-weight:500;
+ }
  p {
      font-weight: 300;
  }
@@ -117,6 +120,26 @@
      letter-spacing: .5;
  }
 
+ /*legal*/
+ .legal {
+        max-width: 450px;
+        margin: auto;
+        padding: 16px;
+    }
+   .legal p {
+       padding-bottom: 24px;
+   }
+   .legal ul {
+   padding-bottom: 24px;    
+   } 
+   .legal ul li {
+        list-style-type: circle;
+        margin-bottom: 5px;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 1.5
+}
+
  /*features*/
  .feature-1,
  .feature-2 {
@@ -170,6 +193,12 @@
      padding: 20px 0;
  }
 
+ /*header*/
+ header{
+        padding: 40px;
+ }
+ header .logo {
+    max-width: 150px;}
  /*footer*/
  footer {
      background-color: var(--light-red);
@@ -204,6 +233,9 @@
      .container {
          max-width: 720px;
      }
+     .legal{
+        max-width: 720px;
+    }
 
 
  }
@@ -217,6 +249,9 @@
          align-items: center;
          grid-gap: 30px;
      }
+     .legal{
+        max-width: 50%;
+    }
 
      .hero {
          height: 850px;
